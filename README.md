@@ -8,6 +8,17 @@ This project implements a ResNet-based Convolutional Neural Network (CNN) to cla
 - Real-time emotion recognition with webcam using OpenCV.
 - Uses **data augmentation** and experiment tracking with **MLflow**.
 
+## Emotion Classes
+The model classifies facial expressions into **7 emotion categories**:
+
+- Angry  
+- Disgust  
+- Fear  
+- Happy  
+- Sad  
+- Surprise  
+- Neutral  
+
  
 
 ## Dataset
