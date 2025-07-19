@@ -27,6 +27,7 @@ Training and testing data are stored as CSV files (`train.csv` and `test.csv`).
 
 ## Requirements
 - use python 3.10 and set up a virtual environment.
+- webcam
 
 Install the dependencies:
 ```bash
