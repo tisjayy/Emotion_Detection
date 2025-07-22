@@ -24,8 +24,25 @@ The model classifies facial expressions into **7 emotion categories**:
 ## Dataset
 The project uses the [FER2013 dataset](https://www.kaggle.com/datasets/msambare/fer2013).  
 Training and testing data are stored as CSV files (`train.csv` and `test.csv`).
+## Docker + Azure
+- Containerized the Streamlit-based emotion detection app with Docker, ensuring consistent environment and dependencies.
+
+- Tested the container locally by running docker build and docker run -p 8501:8501 to validate real-time inference performance.
+
+- Deployed the Docker image to Azure Container Apps, enabling remote access via a public URL.
+
+- Optimized deployment for real-time video streaming (Streamlit + WebRTC) while maintaining <100 ms inference per frame.
+
+It is recommended to run this application locally on your computer rather than online deployments (e.g., Streamlit Cloud or Azure) because:
+
+- Online platforms compress video streams, which reduces image quality and causes frame rate drops.
+
+- The app uses Haar Cascade for face tracking, which is an older technique and may not work well with low-resolution or compressed video feeds.
+
+- Running locally provides better performance, real-time response, and higher detection accuracy.
 
 ## Requirements
+- everything in requirements.txt
 - use python 3.10 and set up a virtual environment.
 - webcam
 
